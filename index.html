@@ -1,35 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Life Centre</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Link to custom CSS -->
     <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
     <header>
-        <div>
-            <img src="images/logo-active-life-centre (1).svg" alt="Active Life Centre Logo">
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="images/logo-active-life-centre (1).svg" alt="Active Life Centre Logo"
+                            class="img-fluid">
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Membership</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="hero">
-        <h2>Welcome to Active Life Centre</h2>
-        <button>View Programs</button>
-        <button>Join Now</button>
-    </div>
-    <div class="section">
-        <h3>Community & Membership</h3>
-        <ul>
-            <li>Flexible membership plans to suit your needs</li>
-            <li>Event spaces available for private bookings</li>
-            <li>Join our inclusive community and make new connections</li>
-        </ul>
-    </div>
-    <div class="section">
-        <h3>Facilities & Amenities</h3>
-        <ul>
-            <li>State-of-the-art fitness center with top-tier equipment</li>
-            <li>Steam rooms & relaxation areas for unwinding after workouts</li>
-            <li>Spacious ice rink for public skating and league play</li>
-        </ul>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Active Life Centre</h2>
+                <button>View Programs</button>
+                <button>Join Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-img.png" alt="Hero Image" class="ms-auto img-fluid">
+            </div>
+
+        </div>
+        <div class="section">
+            <h3>Community & Membership</h3>
+            <ul>
+                <li>Flexible membership plans to suit your needs</li>
+                <li>Event spaces available for private bookings</li>
+                <li>Join our inclusive community and make new connections</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Facilities & Amenities</h3>
+            <ul>
+                <li>State-of-the-art fitness center with top-tier equipment</li>
+                <li>Steam rooms & relaxation areas for unwinding after workouts</li>
+                <li>Spacious ice rink for public skating and league play</li>
+            </ul>
+        </div>
     </div>
     <div class="promo-section">
         <div class="promo-card">
@@ -52,7 +112,8 @@
         </div>
         <div class="careers">
             <h3>Careers</h3>
-            <p>Looking for a fulfilling job in the recreation and fitness industry? Explore career opportunities at Active Life Centre and help us build a healthier community!</p>
+            <p>Looking for a fulfilling job in the recreation and fitness industry? Explore career opportunities at
+                Active Life Centre and help us build a healthier community!</p>
             <button>View Open Positions</button>
         </div>
     </div>
@@ -65,14 +126,14 @@
             </form>
         </div>
         <div class="footer-logo">
-            <img src="images/logo-active-life-centre.svg" alt="Active Life Centre Logo">
+            <img src="images/logo-active-life-centre (1).svg" alt="Active Life Centre Logo">
         </div>
         <div class="footer-links">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Programs</a></li>
                 <li><a href="#">Membership</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class="contact-info">
@@ -81,15 +142,19 @@
             <p>Phone: +1 (343)-099-9991</p>
         </div>
         <div class="social-media">
-            <a href="#"><img src="images/instagram-icon.svg" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter-icon.svg" alt="Twitter"></a>
-            <a href="#"><img src="images/youtube-icon.svg" alt="YouTube"></a>
-            <a href="#"><img src="images/facebook-icon.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
         </div>
         <div class="copyright">
             <p>© 2025 Active Life Centre. All Rights Reserved.</p>
         </div>
     </footer>
-
+    <!-- Link to Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
