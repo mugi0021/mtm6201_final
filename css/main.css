@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #0B233E;
+    --secondary-color: #D6E4F4;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -6,4 +11,18 @@ img {
 
 .logo img {
     max-width: 200px;
+}
+
+body {
+    background-color: #D6E4F4;
+}
+
+.section-discover h3{
+    color: #fff;
+    background-color:var(--primary-color);
+}
+
+.section-discover ul{
+    color: #000000;
+    background-color: rgba(11, 35, 62, 0.4);
 }

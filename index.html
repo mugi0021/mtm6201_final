@@ -63,42 +63,61 @@
         </nav>
     </header>
     <div class="container">
-        <div class="hero">
-            <div class="hero-content">
+        <div class="hero row">
+            <div class="hero-content col-6 d-flex flex-column justify-content-center align-items-center">
                 <h2>Welcome to Active Life Centre</h2>
-                <button>View Programs</button>
-                <button>Join Now</button>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary">View Programs</button>
+                    <button class="btn btn-secondary">Join Now</button>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="images/hero-img.png" alt="Hero Image" class="ms-auto img-fluid">
+            <div class="hero-image col-6">
+                <img src="images/hero-img.png" alt="Hero Image" class="img-fluid">
             </div>
 
         </div>
-        <div class="section">
-            <h3>Community & Membership</h3>
-            <ul>
-                <li>Flexible membership plans to suit your needs</li>
-                <li>Event spaces available for private bookings</li>
-                <li>Join our inclusive community and make new connections</li>
-            </ul>
+        <div class="section text-center mt-5">
+            <h2 class="fw-bold display-5">Discover</h2>
         </div>
-        <div class="section">
-            <h3>Facilities & Amenities</h3>
-            <ul>
-                <li>State-of-the-art fitness center with top-tier equipment</li>
-                <li>Steam rooms & relaxation areas for unwinding after workouts</li>
-                <li>Spacious ice rink for public skating and league play</li>
-            </ul>
+        <div class="section-discover row g-4 justify-content-center mt-1">
+            <div class="col-6 p-0 m-0">
+                <h3 class="fw-bold display-6 p-2 m-0">Community & Membership</h3>
+                <ul class="m-0 p-4">
+                    <li>Flexible membership plans to suit your needs</li>
+                    <li>Event spaces available for private bookings</li>
+                    <li>Join our inclusive community and make new connections</li>
+                </ul>
+            </div>
+            <div class="col-6 p-0 m-0">
+                <h3 class="fw-bold display-6 p-2 m-0">Facilities & Amenities</h3>
+                <ul class="m-0 p-4">
+                    <li>State-of-the-art fitness center with top-tier equipment</li>
+                    <li>Steam rooms & relaxation areas for unwinding after workouts</li>
+                    <li>Spacious ice rink for public skating and league play</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="promo-section">
-        <div class="promo-card">
-            <h3>Join us today</h3>
-            <img src="images/Adult-swim.png" alt="Aquafit Class">
-            <p>Get access to top-notch facilities and exciting fitness programs tailored for all skill levels.</p>
+        <div class="promo-section">
+            <div class="row align-items-center">
+                <div class="col-12 text-white text-center mt-5 mb-5">
+                    <h2 class="fw-bold">Join us today</h2>
+                </div> 
+                <div class="col-md-6 text-white">
+                    <p>Get access to top-notch facilities and exciting fitness programs tailored for all skill levels.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/Adult-swim.png" alt="Aquafit Class" class="img-fluid">
+                </div>
+            </div>
         </div>
-        <div class="featured-programs">
-            <h3>Featured Programs</h3>
+        <!-- Featured Programs Section -->
+        <div class="featured-programs row">
+            <div class="text-center">
+                <h3>Featured Programs</h3>
+            </div>
             <div class="program">
                 <img src="images/Aquafit-class.png" alt="Aquafit Classes">
                 <h4>Aquafit Classes</h4>
@@ -110,13 +129,16 @@
                 <p>A fun-filled session for families to skate together in a lively and safe environment.</p>
             </div>
         </div>
-        <div class="careers">
-            <h3>Careers</h3>
-            <p>Looking for a fulfilling job in the recreation and fitness industry? Explore career opportunities at
-                Active Life Centre and help us build a healthier community!</p>
-            <button>View Open Positions</button>
-        </div>
     </div>
+<!-- Careers Section -->
+    <div class="careers">
+        <h3>Careers</h3>
+        <p>Looking for a fulfilling job in the recreation and fitness industry? Explore career opportunities at
+            Active Life Centre and help us build a healthier community!</p>
+        <button>View Open Positions</button>
+    </div>
+    </div>
+    <!-- Footer -->
     <footer>
         <div class="subscribe">
             <p>Subscribe to see updates</p>
