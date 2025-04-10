@@ -1,8 +1,12 @@
 :root {
     --primary-color: #0B233E;
     --secondary-color: #D6E4F4;
+    --font-heading1: 45px;
+    --font-heading2: 40px;
+    --font-heading3: 35px;
+    --font-heading4: 30px;
+    --font-paragraph: 22px;
 }
-
 img {
     display: block;
     max-width: 100%;
@@ -25,4 +29,39 @@ body {
 .section-discover ul{
     color: #000000;
     background-color: rgba(11, 35, 62, 0.4);
+}
+
+.promo-section{
+    background-color: #5483B3;
+
+}
+
+.careers{
+    background-color: #5483B3;
+    padding: 3rem 10rem;
+}
+.careers button{
+    background-color: #0B233E;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
+footer{
+    background-color: #0B233E;
+}
+footer .logo img{
+    max-width: 200px;
+    display: block;
+}
+footer li {
+    list-style: none;
+    margin: 0 1rem;
+    margin: 1rem 0rem;
+
+
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
 }
