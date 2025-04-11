@@ -7,6 +7,7 @@
     --font-heading3: 35px;
     --font-heading4: 30px;
     --font-paragraph: 22px;
+    --font-family: 'Inter', sans-serif;
 }
 
 /* General styles */
@@ -23,6 +24,7 @@ img {
 body {
     background-color: var(--secondary-color);
     font-size: var(--font-paragraph);
+    font-family: var(--font-family);
 }
 
 /* Index Page */
@@ -177,6 +179,16 @@ footer ul li a {
 /* Membership Info Section */
 .member-info {
     background-color: var(--tertiary-color);
+}
+.memb-btn {
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.memb-btn:hover {
+    background-color: black;
+    color: white;
+    border: none
 }
 
 /* Signup Section */
