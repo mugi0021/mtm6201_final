@@ -65,3 +65,29 @@ footer ul li a{
     color: #fff;
     text-decoration: none;
 }
+.logo-about img{
+    max-width: 200px;
+    /* display: block; */
+}
+
+.about-body{
+    background-color: #D6E4F4;
+    /* padding: 3rem 10rem; */
+}
+.stories-section{
+    background-color:#5483B3;
+    padding: 3rem 10rem;
+}
+
+.faqs-bg{
+    background-color: #D6E4F4;
+}
+.card-1, .card-2, .card-3, .card-4{
+    background-color:#0B233E; 
+}
+.signup-section{
+    background-color:#5483B3;
+}
+.member-info{
+    background-color: #5483B3;
+}
