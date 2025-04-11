@@ -1,12 +1,15 @@
 :root {
     --primary-color: #0B233E;
     --secondary-color: #D6E4F4;
+    --tertiary-color: #5483B3;
     --font-heading1: 45px;
     --font-heading2: 40px;
     --font-heading3: 35px;
     --font-heading4: 30px;
     --font-paragraph: 22px;
 }
+
+/* General styles */
 img {
     display: block;
     max-width: 100%;
@@ -18,86 +21,275 @@ img {
 }
 
 body {
-    background-color: #D6E4F4;
+    background-color: var(--secondary-color);
+    font-size: var(--font-paragraph);
 }
 
-.section-discover h3{
+/* Index Page */
+
+/* Navbar styles */
+.navbar-nav .nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.navbar-nav .nav-link:hover {
     color: #fff;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 10px;
 }
 
-.section-discover ul{
+/* Hero Section */
+.hero-content h1 {
+    color: black;
+}
+
+.view-btn,
+.join-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: button-pop 1s ease infinite alternate;
+}
+
+.view-btn:hover,
+.join-btn:hover {
+    background-color: #5483B3;
+    transform: scale(1.1);
+    border: #000000 2px solid;
+}
+
+.view-btn:active,
+.join-btn:active {
+    transform: scale(0.95);
+}
+
+/* Discover Section */
+.section-discover h3 {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.section-discover ul {
     color: #000000;
     background-color: rgba(11, 35, 62, 0.4);
 }
 
-.promo-section{
-    background-color: #5483B3;
-
+.community-list li,
+.facilities-list li {
+    font-size: 20px;
 }
 
-.careers{
-    background-color: #5483B3;
+/* Promo Section */
+.promo-section {
+    background-color: var(--tertiary-color);
+}
+
+.promo-section img {
+    max-width: 100%;
+}
+
+/* Careers Section */
+.careers {
+    background-color: var(--tertiary-color);
     padding: 3rem 10rem;
 }
-.careers button{
-    background-color: #0B233E;
-    color: #fff;
-    font-size: 1.2rem;
-    border-radius: 30px;
+
+.positions-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: button-pop 1s ease infinite alternate;
 }
 
-footer{
-    background-color: #0B233E;
+.positions-btn:hover {
+    background-color: #000000;
 }
-footer .logo img{
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+footer .logo img {
     max-width: 200px;
     display: block;
 }
+
 footer li {
     list-style: none;
-    margin: 0 1rem;
     margin: 1rem 0rem;
-
-
 }
-footer ul li a{
+
+footer ul li a {
     color: #fff;
     text-decoration: none;
 }
-.logo-about img{
-    max-width: 200px;
-    /* display: block; */
+
+/* About Page */
+
+/* About Body */
+.about-body {
+    background-color: var(--secondary-color);
 }
 
-.about-body{
-    background-color: #D6E4F4;
-    /* padding: 3rem 10rem; */
+/* Mission Section */
+.mission-section img {
+    border-radius: 10px;
 }
-.stories-section{
-    background-color:#5483B3;
+
+/* Team Section */
+.team-section img {
+    border-radius: 50%;
+}
+
+/* Stories Section */
+.stories-section {
+    background-color: var(--tertiary-color);
     padding: 3rem 10rem;
 }
 
-.faqs-bg{
-    background-color: #D6E4F4;
-}
-.card-1, .card-2, .card-3, .card-4{
-    background-color:#0B233E; 
-}
-.signup-section{
-    background-color:#5483B3;
-}
-.member-info{
-    background-color: #5483B3;
+/* FAQs Section */
+.faqs-bg {
+    background-color: var(--secondary-color);
 }
 
-.memb-sec{
-    padding: 15rem;
+/* Membership Page */
+
+/* Membership Cards */
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    background-color: var(--primary-color);
 }
-.contact-bg{
-    background-color: #0B233E;
+
+/* Membership Info Section */
+.member-info {
+    background-color: var(--tertiary-color);
 }
-.btn-color{
-    background-color:#D6E4F4; 
+
+/* Signup Section */
+.signup-section {
+    background-color: var(--tertiary-color);
 }
+
+.signup-btn {
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.signup-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Contact Page */
+
+/* Contact Form */
+.contact-bg {
+    background-color: var(--primary-color);
+}
+
+.send-btn {
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.send-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Keyframe Animation */
+@keyframes button-pop {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+/* Media Queries for Mobile View */
+@media (max-width: 480px) {
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        background-position: center;
+        height: 100vh; 
+        color: white;
+    }
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1; 
+    }
+    .hero-content {
+        z-index: 2; 
+    }
+
+    .hero-content h1 {
+        font-size: 24px; 
+        margin-bottom: 20px;
+    }
+
+    .hero-content .view-btn,
+    .hero-content .join-btn {
+        font-size: 14px; 
+        padding: 10px 20px; 
+        margin: 5px; 
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero-content .view-btn:hover,
+    .hero-content .join-btn:hover {
+        background-color: #5483B3;
+        transform: scale(1.1);
+    }
+
+    .hero-content .view-btn:active,
+    .hero-content .join-btn:active {
+        transform: scale(0.95);
+    }
+
+    .hero-image {
+        display: none;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+}
+
+

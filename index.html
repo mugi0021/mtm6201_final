@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
     <meta charset="UTF-8">
@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-light" aria-label="Main Navigation">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#" itemprop="url">
                     <!-- logo -->
                     <div class="logo">
                         <img src="images/logo-active-life-centre (1).svg" alt="Active Life Centre Logo"
-                            class="img-fluid">
+                            class="img-fluid" itemprop="logo">
                     </div>
                 </a>
 
@@ -34,124 +34,110 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#" aria-label="Home">Home</a>
                         </li>
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html" aria-label="About Us">About</a>
                         </li>
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="membership.html">Membership</a>
+                            <a class="nav-link" href="membership.html" aria-label="Membership Plans">Membership</a>
                         </li>
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html" aria-label="Contact Us">Contact</a>
                         </li>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#" aria-label="Action">Action</a>
+                            <a class="dropdown-item" href="#" aria-label="Another Action">Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#" aria-label="Something Else">Something else here</a>
                         </div>
                         </li>
                     </ul>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="hero row">
-            <div class="hero-content col-6 d-flex flex-column justify-content-center align-items-center">
-                <h1 class="display-4 fw-bold">Welcome to Active Life Centre</h1>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-primary">View Programs</button>
-                    <button class="btn btn-secondary">Join Now</button>
+    <main role="main">
+        <div class="container">
+            <div class="hero row" role="region" aria-labelledby="hero-heading">
+                <div class="hero-content col-6 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="display-4 fw-bold" id="hero-heading">Welcome to Active Life Centre</h1>
+                    <div class="d-flex gap-2">
+                        <button class="view-btn" aria-label="View Programs">View Programs</button>
+                        <button class="join-btn" aria-label="Join Now">Join Now</button>
+                    </div>
+                </div>
+                <div class="hero-image col-6">
+                    <img src="images/hero-img.png" alt="Hero Image showing fitness activities" class="img-fluid">
                 </div>
             </div>
-            <div class="hero-image col-6">
-                <img src="images/hero-img.png" alt="Hero Image" class="img-fluid">
+            <div class="section text-center mt-5" role="region" aria-labelledby="discover-heading">
+                <h2 class="fw-bold display-5" id="discover-heading">Discover</h2>
             </div>
 
-        </div>
-        <div class="section text-center mt-5">
-            <h2 class="fw-bold display-5">Discover</h2>
-        </div>
+            <div class="section-discover row g-4 justify-content-center mt-1" role="region" aria-labelledby="discover-section">
+                <!-- Discover Section 1 -->
+                <div class="col-5 p-2 mx-1">
+                    <h3 class="fw-bold display-6 p-2 m-0" id="community-heading">Community & Membership</h3>
+                    <ul class="community-list m-0 p-4" aria-labelledby="community-heading">
+                        <li>Flexible membership plans to suit your needs</li>
+                        <li>Event spaces available for private bookings</li>
+                        <li>Join our inclusive community and make new connections</li>
+                    </ul>
+                </div>
 
-        <div class="section-discover row g-4 justify-content-center mt-1">
-            <!-- Discover Section 1 -->
-            <div class="col-5 p-0 mx-1">
-                <h3 class="fw-bold display-6 p-2 m-0">Community & Membership</h3>
-                <ul class="m-0 p-4">
-                    <li>Flexible membership plans to suit your needs</li>
-                    <li>Event spaces available for private bookings</li>
-                    <li>Join our inclusive community and make new connections</li>
-                </ul>
+                <!-- Discover section 2 -->
+                <div class="col-5 p-2 mx-1 disco">
+                    <h3 class="fw-bold display-6 p-2 m-0" id="facilities-heading">Facilities & Amenities</h3>
+                    <ul class="facilities-list m-0 p-4" aria-labelledby="facilities-heading">
+                        <li>State-of-the-art fitness center with top-tier equipment</li>
+                        <li>Steam rooms & relaxation areas for unwinding after workouts</li>
+                        <li>Spacious ice rink for public skating and league play</li>
+                    </ul>
+                </div>
             </div>
-            <!-- End of section 1 -->
+        </div>
+        <div class="promo-section py-5" role="region" aria-labelledby="promo-heading">
+            <div class="col-12 text-white text-center m-0 p-0">
+                <h2 class="fw-bold py-2" id="promo-heading">Join us today</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center text-light">
+                    <p class="text-center fs-4">Get access to top-notch facilities and exciting fitness programs tailored
+                        for all skill levels.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center m-0 p-0">
+                    <img src="images/Adult-swim.png" alt="Aquafit Class" class="">
+                </div>
+            </div>
+        </div>
+        <!-- Featured Programs Section -->
+        <h3 class="text-center py-5" id="featured-programs-heading">Featured Programs</h3>
+        <div class="featured-container row m-0 p-0" role="region" aria-labelledby="featured-programs-heading">
+            <!-- Card 1 -->
+            <div
+                class="program-container col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="images/Aquafit-class.png" alt="Aquafit Classes" class="img-fluid mb-3">
+                <h4>Aquafit Classes</h4>
+                <p>Low-impact water-based workouts for all fitness levels.</p>
+            </div>
 
-            <!-- Discover section 2 -->
-            <div class="col-5 p-0 mx-1">
-                <h3 class="fw-bold display-6 p-2 m-0">Facilities & Amenities</h3>
-                <ul class="m-0 p-4">
-                    <li>State-of-the-art fitness center with top-tier equipment</li>
-                    <li>Steam rooms & relaxation areas for unwinding after workouts</li>
-                    <li>Spacious ice rink for public skating and league play</li>
-                </ul>
-            </div>
-            <!-- End of section 2 -->
-        </div>
-    </div>
-    <div class="promo-section py-5">
-        <div class="col-12 text-white text-center m-0 p-0">
-            <h2 class="fw-bold py-2">Join us today</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center text-light">
-                <p class="text-center fs-4">Get access to top-notch facilities and exciting fitness programs tailored
-                    for all skill levels.
-                </p>
-            </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center m-0 p-0">
-                <img src="images/Adult-swim.png" alt="Aquafit Class" class="">
+            <!-- Card 2 -->
+            <div
+                class="program-container col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="images/Ice-skating.png" alt="Family Fun Skate" class="img-fluid mb-3">
+                <h4>Family Fun Skate</h4>
+                <p>A fun-filled session for families to skate together in a lively and safe environment.</p>
             </div>
         </div>
-    </div>
-    <!-- Featured Programs Section -->
-    <h3 class="text-center py-5">Featured Programs</h3>
-    <div class="featured-container row m-0 p-0">
-        <!-- Card 1 -->
-        <div
-            class="program-container col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-            <img src="images/Aquafit-class.png" alt="Aquafit Classes" class="img-fluid mb-3">
-            <h4>Aquafit Classes</h4>
-            <p>Low-impact water-based workouts for all fitness levels.</p>
-        </div>
-        <!-- End card 1 -->
-
-        <!-- Card 2 -->
-        <div
-            class="program-container col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-            <img src="images/Ice-skating.png" alt="Family Fun Skate" class="img-fluid mb-3">
-            <h4>Family Fun Skate</h4>
-            <p>A fun-filled session for families to skate together in a lively and safe environment.</p>
-        </div>
-        <!-- End card 2 -->
-    </div>
-    </div>
-    <!-- Careers Section -->
-    <div class="careers text-center text-light">
-        <h3 class="display-5 fw-bold">Careers</h3>
-        <p class="fs-4">Looking for a fulfilling job in the recreation and fitness industry? Explore career
-            opportunities at
-            Active Life Centre and help us build a healthier community!</p>
-        <button class="p-3 border-0">View Open Positions</button>
-    </div>
-    </div>
+    </main>
     <!-- Footer -->
-    <footer class="text-white py-4">
+    <footer class="text-white py-4" role="contentinfo">
         <div class="container">
             <div class="row d-flex justify-content-between">
                 <!-- Subscribe Section -->
@@ -159,9 +145,9 @@
                     <p>Subscribe to see updates</p>
                 </div>
                 <div class="col-md-6">
-                    <form class="d-flex">
-                        <input type="email" placeholder="Enter your email" class="p-2">
-                        <button type="submit" class="p-2">Subscribe</button>
+                    <form class="d-flex" role="form" aria-label="Subscribe Form">
+                        <input type="email" placeholder="Enter your email" class="p-2" aria-label="Email Address">
+                        <button type="submit" class="p-2" aria-label="Subscribe">Subscribe</button>
                     </form>
                 </div>
 
@@ -172,10 +158,10 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Membership</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" aria-label="About Us">About</a></li>
+                        <li><a href="#" aria-label="Programs">Programs</a></li>
+                        <li><a href="#" aria-label="Membership">Membership</a></li>
+                        <li><a href="#" aria-label="Contact Us">Contact</a></li>
                     </ul>
                 </div>
 
